@@ -16,5 +16,35 @@ namespace Chtper1a1
         {
             InitializeComponent();
         }
+
+        private void Exitbutton_Click(object sender, EventArgs e)
+        {
+            //-> close app
+            this.Close();
+        }
+
+        private void USAFlagDisplaybutton_Click(object sender, EventArgs e)
+        {
+            FlagpictureBox.Image = Properties.Resources.usa;
+            Textlabel.Text = " USA ";
+        }
+
+        private void CanadaFlagDisplaybutton_Click(object sender, EventArgs e)
+        {
+            FlagpictureBox.Image = Properties.Resources.canada;
+            Textlabel.Text = " Canada ";
+        }
+
+        private void JapanFlagDisplaybutton_Click(object sender, EventArgs e)
+        {
+            FlagpictureBox.Image = Properties.Resources.japan;
+            Textlabel.Text = " Japan ";
+        }
+
+        private void MexicoFlagDisplaybutton_Click(object sender, EventArgs e)
+        {
+            FlagpictureBox.Image = Properties.Resources.mexico;
+            Textlabel.Text = " Mexico ";
+        }
     }
 }
