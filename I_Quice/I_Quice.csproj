@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E71923B-1D46-4A43-93F4-93A76211E250}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>I_Quice</RootNamespace>
+    <AssemblyName>I_Quice</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreatureTemplateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatureTemplateForm.Designer.cs">
+      <DependentUpon>CreatureTemplateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbScriptsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dbScriptsForm.Designer.cs">
+      <DependentUpon>dbScriptsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventAIForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventAIForm.Designer.cs">
+      <DependentUpon>EventAIForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameObjectTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameObjectTemplate.Designer.cs">
+      <DependentUpon>GameObjectTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQuiceAboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQuiceAboutBox.Designer.cs">
+      <DependentUpon>IQuiceAboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemTemplate.Designer.cs">
+      <DependentUpon>ItemTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginSplashScreen.Designer.cs">
+      <DependentUpon>LoginSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainIQuiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainIQuiceForm.Designer.cs">
+      <DependentUpon>MainIQuiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuestTemplateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuestTemplateForm.Designer.cs">
+      <DependentUpon>QuestTemplateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptDev2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScriptDev2Form.Designer.cs">
+      <DependentUpon>ScriptDev2Form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CreatureTemplateForm.resx">
+      <DependentUpon>CreatureTemplateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IQuiceAboutBox.resx">
+      <DependentUpon>IQuiceAboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginSplashScreen.resx">
+      <DependentUpon>LoginSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainIQuiceForm.resx">
+      <DependentUpon>MainIQuiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NatureFury.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IQuice Ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfinityLogin.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
