@@ -45,6 +45,7 @@
             // 
             // Exitbutton
             // 
+            this.Exitbutton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Exitbutton.Location = new System.Drawing.Point(94, 226);
             this.Exitbutton.Name = "Exitbutton";
             this.Exitbutton.Size = new System.Drawing.Size(75, 23);
@@ -62,8 +63,10 @@
             // 
             // Form1
             // 
+            this.AcceptButton = this.Displaybutton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.Exitbutton;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.Messagelabel);
             this.Controls.Add(this.Exitbutton);
