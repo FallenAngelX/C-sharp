@@ -243,6 +243,7 @@
             this.ExitAllbutton.Text = "E&xit";
             this.MainIQuicetoolTip1.SetToolTip(this.ExitAllbutton, "This Button Will Close IQuice");
             this.ExitAllbutton.UseVisualStyleBackColor = true;
+            this.ExitAllbutton.Click += new System.EventHandler(this.ExitAllbutton_Click);
             // 
             // IQ_Helpbutton
             // 

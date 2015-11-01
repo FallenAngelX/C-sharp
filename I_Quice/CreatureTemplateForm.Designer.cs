@@ -35,15 +35,19 @@
             this.LeftToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.ContentPanel = new System.Windows.Forms.ToolStripContentPanel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.CreatureTemplatemenuStrip = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CreatureTemplateSearchtabPage = new System.Windows.Forms.TabPage();
             this.CreatureSearchInfogroupBox = new System.Windows.Forms.GroupBox();
             this.ClearCreatureTemplateSearchbutton = new System.Windows.Forms.Button();
+            this.CreatureTemplatemenuStrip = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CreatureTemplateSearchEntrylabel = new System.Windows.Forms.Label();
+            this.CreatureTemplateSearchEntrytextBox = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.CreatureTemplateSearchNamelabel = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
-            this.CreatureTemplatemenuStrip.SuspendLayout();
             this.CreatureTemplateSearchtabPage.SuspendLayout();
             this.CreatureSearchInfogroupBox.SuspendLayout();
+            this.CreatureTemplatemenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // BottomToolStripPanel
@@ -92,23 +96,6 @@
             this.tabControl1.Size = new System.Drawing.Size(1038, 663);
             this.tabControl1.TabIndex = 0;
             // 
-            // CreatureTemplatemenuStrip
-            // 
-            this.CreatureTemplatemenuStrip.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CreatureTemplatemenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
-            this.CreatureTemplatemenuStrip.Location = new System.Drawing.Point(0, 0);
-            this.CreatureTemplatemenuStrip.Name = "CreatureTemplatemenuStrip";
-            this.CreatureTemplatemenuStrip.Size = new System.Drawing.Size(1038, 24);
-            this.CreatureTemplatemenuStrip.TabIndex = 1;
-            this.CreatureTemplatemenuStrip.Text = "CreatureTemplatemenuStrip";
-            // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "&File";
-            // 
             // CreatureTemplateSearchtabPage
             // 
             this.CreatureTemplateSearchtabPage.BackColor = System.Drawing.Color.LightGray;
@@ -123,6 +110,10 @@
             // CreatureSearchInfogroupBox
             // 
             this.CreatureSearchInfogroupBox.BackColor = System.Drawing.Color.DarkGray;
+            this.CreatureSearchInfogroupBox.Controls.Add(this.textBox1);
+            this.CreatureSearchInfogroupBox.Controls.Add(this.CreatureTemplateSearchNamelabel);
+            this.CreatureSearchInfogroupBox.Controls.Add(this.CreatureTemplateSearchEntrytextBox);
+            this.CreatureSearchInfogroupBox.Controls.Add(this.CreatureTemplateSearchEntrylabel);
             this.CreatureSearchInfogroupBox.Controls.Add(this.ClearCreatureTemplateSearchbutton);
             this.CreatureSearchInfogroupBox.Location = new System.Drawing.Point(6, 6);
             this.CreatureSearchInfogroupBox.Name = "CreatureSearchInfogroupBox";
@@ -140,11 +131,60 @@
             this.ClearCreatureTemplateSearchbutton.Text = "&Clear";
             this.ClearCreatureTemplateSearchbutton.UseVisualStyleBackColor = true;
             // 
+            // CreatureTemplatemenuStrip
+            // 
+            this.CreatureTemplatemenuStrip.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CreatureTemplatemenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem});
+            this.CreatureTemplatemenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.CreatureTemplatemenuStrip.Name = "CreatureTemplatemenuStrip";
+            this.CreatureTemplatemenuStrip.Size = new System.Drawing.Size(1038, 24);
+            this.CreatureTemplatemenuStrip.TabIndex = 1;
+            this.CreatureTemplatemenuStrip.Text = "CreatureTemplatemenuStrip";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "&File";
+            // 
+            // CreatureTemplateSearchEntrylabel
+            // 
+            this.CreatureTemplateSearchEntrylabel.AutoSize = true;
+            this.CreatureTemplateSearchEntrylabel.Location = new System.Drawing.Point(25, 33);
+            this.CreatureTemplateSearchEntrylabel.Name = "CreatureTemplateSearchEntrylabel";
+            this.CreatureTemplateSearchEntrylabel.Size = new System.Drawing.Size(77, 13);
+            this.CreatureTemplateSearchEntrylabel.TabIndex = 3;
+            this.CreatureTemplateSearchEntrylabel.Text = "Creature Entry:";
+            // 
+            // CreatureTemplateSearchEntrytextBox
+            // 
+            this.CreatureTemplateSearchEntrytextBox.Location = new System.Drawing.Point(19, 49);
+            this.CreatureTemplateSearchEntrytextBox.Name = "CreatureTemplateSearchEntrytextBox";
+            this.CreatureTemplateSearchEntrytextBox.Size = new System.Drawing.Size(100, 20);
+            this.CreatureTemplateSearchEntrytextBox.TabIndex = 4;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(129, 49);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 6;
+            // 
+            // CreatureTemplateSearchNamelabel
+            // 
+            this.CreatureTemplateSearchNamelabel.AutoSize = true;
+            this.CreatureTemplateSearchNamelabel.Location = new System.Drawing.Point(135, 33);
+            this.CreatureTemplateSearchNamelabel.Name = "CreatureTemplateSearchNamelabel";
+            this.CreatureTemplateSearchNamelabel.Size = new System.Drawing.Size(81, 13);
+            this.CreatureTemplateSearchNamelabel.TabIndex = 5;
+            this.CreatureTemplateSearchNamelabel.Text = "Creature Name:";
+            // 
             // CreatureTemplateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1038, 717);
+            this.ClientSize = new System.Drawing.Size(1038, 730);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.CreatureTemplatemenuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -152,10 +192,11 @@
             this.Name = "CreatureTemplateForm";
             this.Text = "I_Quice - Creature Template Builder & Editor";
             this.tabControl1.ResumeLayout(false);
-            this.CreatureTemplatemenuStrip.ResumeLayout(false);
-            this.CreatureTemplatemenuStrip.PerformLayout();
             this.CreatureTemplateSearchtabPage.ResumeLayout(false);
             this.CreatureSearchInfogroupBox.ResumeLayout(false);
+            this.CreatureSearchInfogroupBox.PerformLayout();
+            this.CreatureTemplatemenuStrip.ResumeLayout(false);
+            this.CreatureTemplatemenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,6 +215,10 @@
         private System.Windows.Forms.TabPage CreatureTemplateSearchtabPage;
         private System.Windows.Forms.GroupBox CreatureSearchInfogroupBox;
         private System.Windows.Forms.Button ClearCreatureTemplateSearchbutton;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label CreatureTemplateSearchNamelabel;
+        private System.Windows.Forms.TextBox CreatureTemplateSearchEntrytextBox;
+        private System.Windows.Forms.Label CreatureTemplateSearchEntrylabel;
 
     }
 }

@@ -68,6 +68,12 @@
     <Compile Include="GameObjectTemplate.Designer.cs">
       <DependentUpon>GameObjectTemplate.cs</DependentUpon>
     </Compile>
+    <Compile Include="IQHelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IQHelpForm.Designer.cs">
+      <DependentUpon>IQHelpForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="IQuiceAboutBox.cs">
       <SubType>Form</SubType>
     </Compile>

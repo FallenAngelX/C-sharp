@@ -29,6 +29,16 @@
         private void InitializeComponent()
         {
             this.ConnectMySQLLogingroupBox = new System.Windows.Forms.GroupBox();
+            this.LoginServerRealmdDBcomboBox = new System.Windows.Forms.ComboBox();
+            this.LoginServerWorldDBcomboBox = new System.Windows.Forms.ComboBox();
+            this.LoginServerCharactersDBcomboBox = new System.Windows.Forms.ComboBox();
+            this.LoginServerPortcomboBox = new System.Windows.Forms.ComboBox();
+            this.LoginServerPasswordcomboBox = new System.Windows.Forms.ComboBox();
+            this.LoginServerNamecomboBox = new System.Windows.Forms.ComboBox();
+            this.LoginServeAddressrcomboBox = new System.Windows.Forms.ComboBox();
+            this.LoginCancelbutton = new System.Windows.Forms.Button();
+            this.LoginClearbutton = new System.Windows.Forms.Button();
+            this.LoginConnectbutton = new System.Windows.Forms.Button();
             this.Portlabel = new System.Windows.Forms.Label();
             this.Realmdlabel = new System.Windows.Forms.Label();
             this.Worldlabel = new System.Windows.Forms.Label();
@@ -36,16 +46,6 @@
             this.passwordLabel = new System.Windows.Forms.Label();
             this.UserNamelabel = new System.Windows.Forms.Label();
             this.Serverlabel = new System.Windows.Forms.Label();
-            this.LoginConnectbutton = new System.Windows.Forms.Button();
-            this.LoginClearbutton = new System.Windows.Forms.Button();
-            this.LoginCancelbutton = new System.Windows.Forms.Button();
-            this.LoginServeAddressrcomboBox = new System.Windows.Forms.ComboBox();
-            this.LoginServerNamecomboBox = new System.Windows.Forms.ComboBox();
-            this.LoginServerPasswordcomboBox = new System.Windows.Forms.ComboBox();
-            this.LoginServerPortcomboBox = new System.Windows.Forms.ComboBox();
-            this.LoginServerCharactersDBcomboBox = new System.Windows.Forms.ComboBox();
-            this.LoginServerWorldDBcomboBox = new System.Windows.Forms.ComboBox();
-            this.LoginServerRealmdDBcomboBox = new System.Windows.Forms.ComboBox();
             this.ConnectMySQLLogingroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,6 +76,103 @@
             this.ConnectMySQLLogingroupBox.TabIndex = 0;
             this.ConnectMySQLLogingroupBox.TabStop = false;
             this.ConnectMySQLLogingroupBox.Text = ":Connect to MySQL Server:";
+            // 
+            // LoginServerRealmdDBcomboBox
+            // 
+            this.LoginServerRealmdDBcomboBox.FormattingEnabled = true;
+            this.LoginServerRealmdDBcomboBox.Items.AddRange(new object[] {
+            "realmd"});
+            this.LoginServerRealmdDBcomboBox.Location = new System.Drawing.Point(348, 250);
+            this.LoginServerRealmdDBcomboBox.Name = "LoginServerRealmdDBcomboBox";
+            this.LoginServerRealmdDBcomboBox.Size = new System.Drawing.Size(121, 21);
+            this.LoginServerRealmdDBcomboBox.TabIndex = 7;
+            // 
+            // LoginServerWorldDBcomboBox
+            // 
+            this.LoginServerWorldDBcomboBox.FormattingEnabled = true;
+            this.LoginServerWorldDBcomboBox.Items.AddRange(new object[] {
+            "mangos"});
+            this.LoginServerWorldDBcomboBox.Location = new System.Drawing.Point(348, 198);
+            this.LoginServerWorldDBcomboBox.Name = "LoginServerWorldDBcomboBox";
+            this.LoginServerWorldDBcomboBox.Size = new System.Drawing.Size(121, 21);
+            this.LoginServerWorldDBcomboBox.TabIndex = 6;
+            // 
+            // LoginServerCharactersDBcomboBox
+            // 
+            this.LoginServerCharactersDBcomboBox.FormattingEnabled = true;
+            this.LoginServerCharactersDBcomboBox.Items.AddRange(new object[] {
+            "characters"});
+            this.LoginServerCharactersDBcomboBox.Location = new System.Drawing.Point(348, 135);
+            this.LoginServerCharactersDBcomboBox.Name = "LoginServerCharactersDBcomboBox";
+            this.LoginServerCharactersDBcomboBox.Size = new System.Drawing.Size(121, 21);
+            this.LoginServerCharactersDBcomboBox.TabIndex = 5;
+            // 
+            // LoginServerPortcomboBox
+            // 
+            this.LoginServerPortcomboBox.FormattingEnabled = true;
+            this.LoginServerPortcomboBox.Items.AddRange(new object[] {
+            "3306"});
+            this.LoginServerPortcomboBox.Location = new System.Drawing.Point(348, 79);
+            this.LoginServerPortcomboBox.Name = "LoginServerPortcomboBox";
+            this.LoginServerPortcomboBox.Size = new System.Drawing.Size(121, 21);
+            this.LoginServerPortcomboBox.TabIndex = 4;
+            // 
+            // LoginServerPasswordcomboBox
+            // 
+            this.LoginServerPasswordcomboBox.FormattingEnabled = true;
+            this.LoginServerPasswordcomboBox.Location = new System.Drawing.Point(33, 198);
+            this.LoginServerPasswordcomboBox.Name = "LoginServerPasswordcomboBox";
+            this.LoginServerPasswordcomboBox.Size = new System.Drawing.Size(121, 21);
+            this.LoginServerPasswordcomboBox.TabIndex = 3;
+            // 
+            // LoginServerNamecomboBox
+            // 
+            this.LoginServerNamecomboBox.FormattingEnabled = true;
+            this.LoginServerNamecomboBox.Items.AddRange(new object[] {
+            "root"});
+            this.LoginServerNamecomboBox.Location = new System.Drawing.Point(33, 135);
+            this.LoginServerNamecomboBox.Name = "LoginServerNamecomboBox";
+            this.LoginServerNamecomboBox.Size = new System.Drawing.Size(121, 21);
+            this.LoginServerNamecomboBox.TabIndex = 2;
+            // 
+            // LoginServeAddressrcomboBox
+            // 
+            this.LoginServeAddressrcomboBox.FormattingEnabled = true;
+            this.LoginServeAddressrcomboBox.Items.AddRange(new object[] {
+            "127.0.0.1"});
+            this.LoginServeAddressrcomboBox.Location = new System.Drawing.Point(33, 79);
+            this.LoginServeAddressrcomboBox.Name = "LoginServeAddressrcomboBox";
+            this.LoginServeAddressrcomboBox.Size = new System.Drawing.Size(121, 21);
+            this.LoginServeAddressrcomboBox.TabIndex = 1;
+            // 
+            // LoginCancelbutton
+            // 
+            this.LoginCancelbutton.Location = new System.Drawing.Point(195, 291);
+            this.LoginCancelbutton.Name = "LoginCancelbutton";
+            this.LoginCancelbutton.Size = new System.Drawing.Size(75, 23);
+            this.LoginCancelbutton.TabIndex = 10;
+            this.LoginCancelbutton.Text = "C&ancel";
+            this.LoginCancelbutton.UseVisualStyleBackColor = true;
+            this.LoginCancelbutton.Click += new System.EventHandler(this.LoginCancelbutton_Click);
+            // 
+            // LoginClearbutton
+            // 
+            this.LoginClearbutton.Location = new System.Drawing.Point(114, 291);
+            this.LoginClearbutton.Name = "LoginClearbutton";
+            this.LoginClearbutton.Size = new System.Drawing.Size(75, 23);
+            this.LoginClearbutton.TabIndex = 9;
+            this.LoginClearbutton.Text = "C&lear";
+            this.LoginClearbutton.UseVisualStyleBackColor = true;
+            this.LoginClearbutton.Click += new System.EventHandler(this.LoginClearbutton_Click);
+            // 
+            // LoginConnectbutton
+            // 
+            this.LoginConnectbutton.Location = new System.Drawing.Point(33, 291);
+            this.LoginConnectbutton.Name = "LoginConnectbutton";
+            this.LoginConnectbutton.Size = new System.Drawing.Size(75, 23);
+            this.LoginConnectbutton.TabIndex = 8;
+            this.LoginConnectbutton.Text = "&Connect";
+            this.LoginConnectbutton.UseVisualStyleBackColor = true;
             // 
             // Portlabel
             // 
@@ -139,89 +236,6 @@
             this.Serverlabel.Size = new System.Drawing.Size(41, 13);
             this.Serverlabel.TabIndex = 0;
             this.Serverlabel.Text = "Server:";
-            // 
-            // LoginConnectbutton
-            // 
-            this.LoginConnectbutton.Location = new System.Drawing.Point(33, 291);
-            this.LoginConnectbutton.Name = "LoginConnectbutton";
-            this.LoginConnectbutton.Size = new System.Drawing.Size(75, 23);
-            this.LoginConnectbutton.TabIndex = 8;
-            this.LoginConnectbutton.Text = "&Connect";
-            this.LoginConnectbutton.UseVisualStyleBackColor = true;
-            // 
-            // LoginClearbutton
-            // 
-            this.LoginClearbutton.Location = new System.Drawing.Point(114, 291);
-            this.LoginClearbutton.Name = "LoginClearbutton";
-            this.LoginClearbutton.Size = new System.Drawing.Size(75, 23);
-            this.LoginClearbutton.TabIndex = 9;
-            this.LoginClearbutton.Text = "C&lear";
-            this.LoginClearbutton.UseVisualStyleBackColor = true;
-            // 
-            // LoginCancelbutton
-            // 
-            this.LoginCancelbutton.Location = new System.Drawing.Point(195, 291);
-            this.LoginCancelbutton.Name = "LoginCancelbutton";
-            this.LoginCancelbutton.Size = new System.Drawing.Size(75, 23);
-            this.LoginCancelbutton.TabIndex = 10;
-            this.LoginCancelbutton.Text = "C&ancel";
-            this.LoginCancelbutton.UseVisualStyleBackColor = true;
-            // 
-            // LoginServeAddressrcomboBox
-            // 
-            this.LoginServeAddressrcomboBox.FormattingEnabled = true;
-            this.LoginServeAddressrcomboBox.Location = new System.Drawing.Point(33, 79);
-            this.LoginServeAddressrcomboBox.Name = "LoginServeAddressrcomboBox";
-            this.LoginServeAddressrcomboBox.Size = new System.Drawing.Size(121, 21);
-            this.LoginServeAddressrcomboBox.TabIndex = 1;
-            // 
-            // LoginServerNamecomboBox
-            // 
-            this.LoginServerNamecomboBox.FormattingEnabled = true;
-            this.LoginServerNamecomboBox.Location = new System.Drawing.Point(33, 135);
-            this.LoginServerNamecomboBox.Name = "LoginServerNamecomboBox";
-            this.LoginServerNamecomboBox.Size = new System.Drawing.Size(121, 21);
-            this.LoginServerNamecomboBox.TabIndex = 2;
-            // 
-            // LoginServerPasswordcomboBox
-            // 
-            this.LoginServerPasswordcomboBox.FormattingEnabled = true;
-            this.LoginServerPasswordcomboBox.Location = new System.Drawing.Point(33, 198);
-            this.LoginServerPasswordcomboBox.Name = "LoginServerPasswordcomboBox";
-            this.LoginServerPasswordcomboBox.Size = new System.Drawing.Size(121, 21);
-            this.LoginServerPasswordcomboBox.TabIndex = 3;
-            // 
-            // LoginServerPortcomboBox
-            // 
-            this.LoginServerPortcomboBox.FormattingEnabled = true;
-            this.LoginServerPortcomboBox.Location = new System.Drawing.Point(348, 79);
-            this.LoginServerPortcomboBox.Name = "LoginServerPortcomboBox";
-            this.LoginServerPortcomboBox.Size = new System.Drawing.Size(121, 21);
-            this.LoginServerPortcomboBox.TabIndex = 4;
-            // 
-            // LoginServerCharactersDBcomboBox
-            // 
-            this.LoginServerCharactersDBcomboBox.FormattingEnabled = true;
-            this.LoginServerCharactersDBcomboBox.Location = new System.Drawing.Point(348, 135);
-            this.LoginServerCharactersDBcomboBox.Name = "LoginServerCharactersDBcomboBox";
-            this.LoginServerCharactersDBcomboBox.Size = new System.Drawing.Size(121, 21);
-            this.LoginServerCharactersDBcomboBox.TabIndex = 5;
-            // 
-            // LoginServerWorldDBcomboBox
-            // 
-            this.LoginServerWorldDBcomboBox.FormattingEnabled = true;
-            this.LoginServerWorldDBcomboBox.Location = new System.Drawing.Point(348, 198);
-            this.LoginServerWorldDBcomboBox.Name = "LoginServerWorldDBcomboBox";
-            this.LoginServerWorldDBcomboBox.Size = new System.Drawing.Size(121, 21);
-            this.LoginServerWorldDBcomboBox.TabIndex = 6;
-            // 
-            // LoginServerRealmdDBcomboBox
-            // 
-            this.LoginServerRealmdDBcomboBox.FormattingEnabled = true;
-            this.LoginServerRealmdDBcomboBox.Location = new System.Drawing.Point(348, 250);
-            this.LoginServerRealmdDBcomboBox.Name = "LoginServerRealmdDBcomboBox";
-            this.LoginServerRealmdDBcomboBox.Size = new System.Drawing.Size(121, 21);
-            this.LoginServerRealmdDBcomboBox.TabIndex = 7;
             // 
             // LoginSplashScreen
             // 

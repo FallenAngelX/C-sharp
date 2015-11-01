@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace I_Quice
 {
-    public partial class MainIQuiceForm : Form
+    public partial class IQHelpForm : Form
     {
-        public MainIQuiceForm()
+        public IQHelpForm()
         {
             InitializeComponent();
-        }
-
-        private void ExitAllbutton_Click(object sender, EventArgs e)
-        {
-            // Closes program
-            this.Close();
         }
     }
 }

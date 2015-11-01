@@ -16,5 +16,16 @@ namespace I_Quice
         {
             InitializeComponent();
         }
+
+        private void LoginCancelbutton_Click(object sender, EventArgs e)
+        {
+            //Close the program
+            this.Close();
+        }
+
+        private void LoginClearbutton_Click(object sender, EventArgs e)
+        {
+            // just clear Input text boxes
+        }
     }
 }

@@ -16,6 +16,10 @@ namespace I_Quice
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            // start loginsplash screen
+            LoginSplashScreen aLoginSplashScreen = new LoginSplashScreen();
+            // show it
+            aLoginSplashScreen.ShowDialog();
             Application.Run(new MainIQuiceForm());
         }
     }
