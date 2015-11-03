@@ -81,6 +81,7 @@
             // 
             this.LoginServerRealmdDBcomboBox.FormattingEnabled = true;
             this.LoginServerRealmdDBcomboBox.Items.AddRange(new object[] {
+            "",
             "realmd"});
             this.LoginServerRealmdDBcomboBox.Location = new System.Drawing.Point(348, 250);
             this.LoginServerRealmdDBcomboBox.Name = "LoginServerRealmdDBcomboBox";
@@ -91,6 +92,7 @@
             // 
             this.LoginServerWorldDBcomboBox.FormattingEnabled = true;
             this.LoginServerWorldDBcomboBox.Items.AddRange(new object[] {
+            "",
             "mangos"});
             this.LoginServerWorldDBcomboBox.Location = new System.Drawing.Point(348, 198);
             this.LoginServerWorldDBcomboBox.Name = "LoginServerWorldDBcomboBox";
@@ -101,6 +103,7 @@
             // 
             this.LoginServerCharactersDBcomboBox.FormattingEnabled = true;
             this.LoginServerCharactersDBcomboBox.Items.AddRange(new object[] {
+            "",
             "characters"});
             this.LoginServerCharactersDBcomboBox.Location = new System.Drawing.Point(348, 135);
             this.LoginServerCharactersDBcomboBox.Name = "LoginServerCharactersDBcomboBox";
@@ -111,6 +114,7 @@
             // 
             this.LoginServerPortcomboBox.FormattingEnabled = true;
             this.LoginServerPortcomboBox.Items.AddRange(new object[] {
+            "",
             "3306"});
             this.LoginServerPortcomboBox.Location = new System.Drawing.Point(348, 79);
             this.LoginServerPortcomboBox.Name = "LoginServerPortcomboBox";
@@ -129,6 +133,7 @@
             // 
             this.LoginServerNamecomboBox.FormattingEnabled = true;
             this.LoginServerNamecomboBox.Items.AddRange(new object[] {
+            "",
             "root"});
             this.LoginServerNamecomboBox.Location = new System.Drawing.Point(33, 135);
             this.LoginServerNamecomboBox.Name = "LoginServerNamecomboBox";
@@ -139,6 +144,7 @@
             // 
             this.LoginServeAddressrcomboBox.FormattingEnabled = true;
             this.LoginServeAddressrcomboBox.Items.AddRange(new object[] {
+            "",
             "127.0.0.1"});
             this.LoginServeAddressrcomboBox.Location = new System.Drawing.Point(33, 79);
             this.LoginServeAddressrcomboBox.Name = "LoginServeAddressrcomboBox";
